@@ -43,7 +43,7 @@ while len(word_list) > 0:
         grammar = request.json()['results'][0]['lexicalEntries'][0]['lexicalCategory']['text']        
         status = word_id.capitalize() + " (" + grammar + ") " + "\n" + definition
         
-#       api.update_status(status)
+        api.update_status(status)
         print("Posted")
         
         #delets word from list after it is used, stops repeat words
